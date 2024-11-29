@@ -21,7 +21,7 @@
      <div class="flex items-center">
       <menu class="flex items-center">
        <li>
-        <button class="white-mode-button cursor-default w-[35px] h-[30px] flex items-center justify-center border border-solid border-transparent rounded-[90px_0px_0px_90px] bg-[#F15A24] dark:bg-[#252525]" type="button" aria-expanded="false" data-tippy-content="Светлая тема" id="lightMode">
+        <button class="white-mode-button cursor-default w-[35px] h-[30px] flex items-center justify-center border border-solid  rounded-[90px_0px_0px_90px] bg-[#F15A24] dark:bg-[#252525]" type="button" aria-expanded="false" data-tippy-content="Светлая тема" id="lightMode">
           <img src="icons/white-mode-on.svg" alt="">
         </button>
        </li>
@@ -96,7 +96,7 @@
       </div>
     </section>
 
-    <section class="dark:bg-[#111] pb-[130px] max-sm:pb-[30px]">
+    <section class="dark:bg-[#111] pb-[130px] max-sm:pb-[30px] ">
       <div class="container flex justify-between gap-x-[36px] max-md:gap-x-[20px] px-[15px] max-md:items-start max-mobile:flex-col max-mobile:gap-y-[24px]">
         <img src="./public/imgs/portfolio.png" alt="" class="w-[30%] rounded-md shadow-md max-mobile:w-[100%] max-mobile:object-contain">
         <div class="flex w-[70%] flex-col max-mobile:w-[100%]">
@@ -114,27 +114,27 @@
       </div>
     </section>
 
-    <section class="text-center px-[15px] py-[80px] bg-[#F6FBFF] dark:bg-[#252525]">
-      <div class="container  px-[15px]">
+    <section class="text-center px-[15px] py-[80px] max-sm:py-[30px] bg-[#F6FBFF] dark:bg-[#252525]">
+      <div class="container">
         <h2 class="text-[40px] font-bold dark:text-white text-left custom-after max-sm:text-[25px]">Закажите консультацию</h2>
-        <h3 class="text-[32px] text-left dark:text-white mt-[55px]">Оставьте свои данные и мы свяжемся с Вами</h3>
-        <form class="mt-[40px] flex gap-x-[38px] ">
+        <h3 class="text-[32px] text-left dark:text-white mt-[55px] max-md:text-[24px]  max-md:mt-[35px]">Оставьте свои данные и мы свяжемся с Вами</h3>
+        <form class="mt-[40px] flex gap-x-[38px] max-md:mt-[35px] max-md:flex-wrap max-md:gap-x-0 max-md:justify-between max-md:gap-y-[15px]">
           <input type="text" placeholder="Ваше имя" class="rounded dark:text-white
-           bg-[#fff] pb-[25px] pl-[25px] pt-[28px] dark:bg-[#111] w-[100%] text-black font-montserrat text-[17px] font-normal leading-none" name="name">
+           bg-[#fff] pb-[25px] pl-[25px] pt-[28px] dark:bg-[#111] w-[100%] text-black font-montserrat text-[17px] font-normal leading-none max-md:w-[49%] max-md:pr-3 max-mobile:w-[100%] max-mobile:pb-[20px] max-mobile:pt-[20px] " name="name">
           <input type="text" placeholder="Номер телефона" class="rounded dark:text-white
-           bg-[#fff] pb-[25px] pl-[25px] pt-[28px] dark:bg-[#111] w-[100%] text-black font-montserrat text-[17px] font-normal leading-none" name="phone">
-          <button class=" text-center font-gilroy text-[17px] font-semibold leading-none px-6 py-2 bg-[#F15A24] text-white rounded hover:bg-orange-600 md:col-span-2 w-[100%]">
+           bg-[#fff] pb-[25px] pl-[25px] pt-[28px] dark:bg-[#111] w-[100%] text-black font-montserrat text-[17px] font-normal leading-none max-md:w-[49%] max-md:pr-3 max-mobile:w-[100%] max-mobile:pb-[20px] max-mobile:pt-[20px] " name="phone">
+          <button class=" text-center font-gilroy text-[17px] font-semibold leading-none px-6 py-2 max-md:py-6 max-mobile:py-[20px] max-mobile:px-[20px] bg-[#F15A24] text-white rounded hover:bg-orange-600 md:col-span-2 max-md:w-[100%]">
             Заказать консультацию
           </button>
         </form>
       </div>
      
     </section>
-    <section class="pt-[130px] pb-[223px] dark:bg-[#111]">
+    <section class="pt-[130px] pb-[223px] max-sm:py-[30px] dark:bg-[#111] max-md:pt-[40px] max-md:pb-[40px]">
       <div class="container px-[15px]">
         <h2 class="text-[40px] font-bold dark:text-white text-left custom-after rose max-sm:text-[25px]">Способы оплаты и с томиость</h2>
-        <div class="flex justify-between  flex-wrap mt-10" >
-          <div class="flex flex-col gap-y-10">
+        <div class="flex justify-between flex-wrap mt-10 max-md:gap-y-[20px]" >
+          <div class="flex flex-col gap-y-10 max-md:gap-y-5">
             <div class="text-[20px] text-[400] dark:text-white ">
               Начальная стоимость <br> разработки сайта:
             </div>
@@ -142,7 +142,7 @@
               от 10 000 ₽
             </div>
           </div>
-          <div class="flex flex-col gap-y-10">
+          <div class="flex flex-col gap-y-10 max-md:gap-y-5">
             <div class="text-[20px] text-[400]  dark:text-white">
               Доступные пособы <br> оплаты работы:
             </div>
@@ -153,7 +153,7 @@
               <img src="./public/icons/image_partner.svg" alt="">
             </div>
           </div>
-          <div class="flex flex-col gap-y-10">
+          <div class="flex flex-col gap-y-10 max-md:gap-y-5">
             <div class="text-[20px] text-[400] dark:text-white ">
               Способы связи для <br> оформления заказа:
             </div>
@@ -172,7 +172,7 @@
   <footer class="p-4 bg-[#383838] text-center">
   <div class="container flex justify-between items-center">
     <a href="">
-      <img src="./public/imgs/logo/logo-white.png" alt="" >
+      <img class="max-xs:w-[130px]" src="./public/imgs/logo/logo-white.png" alt="" >
     </a>
     <a href="">
       <img src="icons/telegram.svg" alt="">
