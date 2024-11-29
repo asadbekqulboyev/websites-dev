@@ -49,3 +49,22 @@ body {
 .tippy-arrow {
   transition: none !important;
 }
+.custom-after::after {
+  margin-top: 10px;
+  content: "";
+  width: 128px;
+  height: 6px;
+  border-radius: 90px;
+  background: #DEEEFF;
+  display: block; /* ::after elementini ko‘rsatish uchun */
+}
+.custom-after.rose::after {
+  background-color: #FFBDA7;
+}
+@media(max-width:640px){
+  .custom-after::after{
+    width: 60px;
+    margin-top: 5px;
+    height: 4px;
+  }
+}

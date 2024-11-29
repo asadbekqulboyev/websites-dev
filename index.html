@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>web-sites.dev - разработка сайтов на заказ</title>
 </head>
-<body>
+<body class="dark:bg-[#252525]">
   <header class="w-full min-h-[60px] max-md:min-h-[40px] p-[15px] bg-[#F6FBFF] dark:bg-[#252525] fixed">
    <div class="flex gap-[20px] justify-between container">
     <a class="[@media(hover:hover)]:hover:drop-shadow-xl active:scale-[0.9]" href="index.html">
@@ -36,12 +36,12 @@
     </div>
    </div>
   </header>
-  <main class=" mx-auto py-4">
+  <main class=" mx-auto">
     <section class="text-center pt-[140px] max-sm:pt-[80px] pb-[94px] max-sm:pb-[40px] bg-[#F6FBFF] dark:bg-[#252525] px-[15px]">
       <div class="container flex justify-between max-mobile:justify-center max-mobile:flex-col max-mobile:align-center max-mobile:gap-y-4">
         <div class="flex flex-col w-[40%] max-md:w-[50%] max-mobile:w-[100%]">
           <h2 class="text-[40px] font-bold text-left mt-[68px] dark:text-white max-lg:text-[30px] max-md:text-[24px] max-sm:mt-[24px] max-mobile:text-center max-mobile:mt-0">Создаем сайты, продумываем дизайн и структуру</h2>
-          <a href="" class="mt-[80px] max-md:mt-[60px] px-6 py-2 bg-orange-500 text-white text-[17px] rounded hover:bg-orange-600 w-[fit-content] max-sm:mt-[40px] max-mobile:mx-auto max-mobile:mt-5">
+          <a href="" class="mt-[80px] max-md:mt-[60px] px-[59px] py-[18px] bg-[#F15A24] text-white text-center font-gilroy text-[17px] font-semibold leading-none rounded hover:bg-orange-600 w-[fit-content] max-sm:mt-[40px] max-mobile:mx-auto max-mobile:mt-5">
             Обсудить проект
           </a>
         </div>
@@ -52,36 +52,132 @@
       
       
     </section>
-
-    <section class="grid md:grid-cols-3 gap-8 py-8">
-      <div class="p-4 bg-white dark:bg-gray-800 rounded shadow">
-        <h3 class="font-bold text-xl">Гарантия качества</h3>
-        <p>Мы гарантируем качество нашей работы.</p>
-      </div>
-      <div class="p-4 bg-white dark:bg-gray-800 rounded shadow">
-        <h3 class="font-bold text-xl">Комплексный подход</h3>
-        <p>Полный пакет услуг для вашего сайта.</p>
-      </div>
-      <div class="p-4 bg-white dark:bg-gray-800 rounded shadow">
-        <h3 class="font-bold text-xl">Быстрое выполнение</h3>
-        <p>Оперативное выполнение заказов.</p>
+    <section class="py-[130px] dark:bg-[#111] max-lg:py-[60px] max-sm:py-[30px]">
+      <div class="container px-[15px]">
+        <h2 class="text-[40px] font-bold dark:text-white text-left custom-after rose max-sm:text-[25px]">О нашей компании</h2>
+        <div class="flex justify-between gap-x-[40px] max-lg:gap-x-0  max-lg:gap-y-[20px] mt-[30px] max-lg:flex-wrap">
+          <div class="flex flex-col gap-y-[15px] items-start max-lg:w-[calc(33.33%-10px)] max-md:w-[calc(50%-10px)] max-sm:w-[100%] max-sm:items-center">
+            <img src="./public/icons/company_icon1.svg" alt="">
+            <div class="text-black dark:text-white font-montserrat text-[16px] font-medium leading-none">
+              Гарантия качества
+            </div>
+            <div class="text-black font-montserrat text-[15px] font-normal leading-[24px] dark:text-white max-sm:text-center" >
+              Начиная с разработки сайта и заканчивая технической поддержкой, на все работы даем гарантиюна работу
+            </div>
+          </div>
+          <div class="flex flex-col gap-y-[15px] items-start max-lg:w-[calc(33.33%-10px)] max-md:w-[calc(50%-10px)] max-sm:w-[100%] max-sm:items-center">
+            <img src="./public/icons/company_icon2.svg" alt="">
+            <div class="text-black font-montserrat text-[16px] font-medium leading-none mt-[3px] dark:text-white">
+              Комплексный подход
+            </div>
+            <div class="text-black font-montserrat text-[15px] font-normal leading-[24px] dark:text-white max-sm:text-center" >
+              Мы предлагаем полный пакет услуг, начиная с разработки бизнес-идеи и заканчивая ведением сайта.   
+            </div>
+          </div>
+          <div class="flex flex-col gap-y-[15px] items-start max-lg:w-[calc(33.33%-10px)] max-md:w-[calc(50%-10px)] max-sm:w-[100%] max-sm:items-center">
+            <img src="./public/icons/company_icon1.svg" alt="">
+            <div class="text-black font-montserrat text-[16px] font-medium leading-none dark:text-white ">
+              Быстрое выполнение работ
+            </div>
+            <div class="text-black font-montserrat text-[15px] font-normal leading-[24px] dark:text-white max-sm:text-center" >
+              Оперативно решим задачи по любым изменениям с сайтом, тут еще пару строчек
+            </div>
+          </div>
+          <div class="flex flex-col gap-y-[15px] items-start max-lg:w-[calc(33.33%-10px)] max-md:w-[calc(50%-10px)] max-sm:w-[100%] max-sm:items-center">
+            <img src="./public/icons/company_icon4.svg" alt="">
+            <div class="text-black font-montserrat text-[16px] font-medium leading-none mt-[3px] dark:text-white">
+              Комплексный подход
+            </div>
+            <div class="text-black font-montserrat text-[15px] font-normal leading-[24px] dark:text-white max-sm:text-center" >
+              Мы предлагаем полный пакет услуг, начиная с разработки бизнес-идеи и заканчивая ведением сайта.   
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
-    <section class="text-center py-8">
-      <h2 class="text-2xl font-bold">Закажите консультацию</h2>
-      <form class="mt-4 grid gap-4 md:grid-cols-2">
-        <input type="text" placeholder="Ваше имя" class="p-2 rounded border dark:bg-gray-800">
-        <input type="text" placeholder="Номер телефона" class="p-2 rounded border dark:bg-gray-800">
-        <button class="px-6 py-2 bg-orange-500 text-white rounded hover:bg-orange-600 md:col-span-2">
-          Заказать консультацию
-        </button>
-      </form>
+    <section class="dark:bg-[#111] pb-[130px] max-sm:pb-[30px]">
+      <div class="container flex justify-between gap-x-[36px] max-md:gap-x-[20px] px-[15px] max-md:items-start max-mobile:flex-col max-mobile:gap-y-[24px]">
+        <img src="./public/imgs/portfolio.png" alt="" class="w-[30%] rounded-md shadow-md max-mobile:w-[100%] max-mobile:object-contain">
+        <div class="flex w-[70%] flex-col max-mobile:w-[100%]">
+          <h2 class="text-[40px] font-bold dark:text-white text-left custom-after rose mt-2 max-md:mt-0 max-sm:text-[20px]  max-mobile:text-[25px]">Наши кейсы</h2>
+          <div class="mt-10 dark:text-white font-montserrat text-[32px] font-medium leading-none max-md:mt-[20px] max-sm:text-[14px] max-sm:mt-[14px]">
+            Название проекта
+          </div>
+          <div class="dark:text-white font-montserrat text-[16px] font-normal leading-[27px] mt-5 max-md:text-[14px] max-sm:mt-[10px] max-sm:leading-normal">
+            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit
+          </div>
+          <a href="" class="text-white text-center font-gilroy text-[17px] font-semibold leading-none py-[18px] px-[76px] rounded-[5px] bg-[#F15A24] w-[fit-content] mt-[38px] max-md:mt-[20px] max-sm:py-[10px]  max-sm:px-[40px]">
+            Хочу так же !
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="text-center px-[15px] py-[80px] bg-[#F6FBFF] dark:bg-[#252525]">
+      <div class="container  px-[15px]">
+        <h2 class="text-[40px] font-bold dark:text-white text-left custom-after max-sm:text-[25px]">Закажите консультацию</h2>
+        <h3 class="text-[32px] text-left dark:text-white mt-[55px]">Оставьте свои данные и мы свяжемся с Вами</h3>
+        <form class="mt-[40px] flex gap-x-[38px] ">
+          <input type="text" placeholder="Ваше имя" class="rounded dark:text-white
+           bg-[#fff] pb-[25px] pl-[25px] pt-[28px] dark:bg-[#111] w-[100%] text-black font-montserrat text-[17px] font-normal leading-none" name="name">
+          <input type="text" placeholder="Номер телефона" class="rounded dark:text-white
+           bg-[#fff] pb-[25px] pl-[25px] pt-[28px] dark:bg-[#111] w-[100%] text-black font-montserrat text-[17px] font-normal leading-none" name="phone">
+          <button class=" text-center font-gilroy text-[17px] font-semibold leading-none px-6 py-2 bg-[#F15A24] text-white rounded hover:bg-orange-600 md:col-span-2 w-[100%]">
+            Заказать консультацию
+          </button>
+        </form>
+      </div>
+     
+    </section>
+    <section class="pt-[130px] pb-[223px] dark:bg-[#111]">
+      <div class="container px-[15px]">
+        <h2 class="text-[40px] font-bold dark:text-white text-left custom-after rose max-sm:text-[25px]">Способы оплаты и с томиость</h2>
+        <div class="flex justify-between  flex-wrap mt-10" >
+          <div class="flex flex-col gap-y-10">
+            <div class="text-[20px] text-[400] dark:text-white ">
+              Начальная стоимость <br> разработки сайта:
+            </div>
+            <div class="text-[36px] font-bold text-[#F15A24]">
+              от 10 000 ₽
+            </div>
+          </div>
+          <div class="flex flex-col gap-y-10">
+            <div class="text-[20px] text-[400]  dark:text-white">
+              Доступные пособы <br> оплаты работы:
+            </div>
+            <div class="flex items-center gap-x-[20px]">
+              <div class="text-black dark:text-white font-montserrat text-[17px] font-bold leading-none uppercase">
+                Криптавалюта
+              </div> 
+              <img src="./public/icons/image_partner.svg" alt="">
+            </div>
+          </div>
+          <div class="flex flex-col gap-y-10">
+            <div class="text-[20px] text-[400] dark:text-white ">
+              Способы связи для <br> оформления заказа:
+            </div>
+            <a href="" class="flex items-center gap-x-[10px]">
+              <img src="./public/icons/telegram.svg" alt="">
+              <div class="text-black font-montserrat text-[15px] font-semibold leading-none dark:text-white">
+                name example
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
     </section>
   </main>
 
-  <footer class="p-4 bg-gray-200 dark:bg-gray-800 text-center">
-    <p>© 2024 Websites. Все права защищены.</p>
+  <footer class="p-4 bg-[#383838] text-center">
+  <div class="container flex justify-between items-center">
+    <a href="">
+      <img src="./public/imgs/logo/logo-white.png" alt="" >
+    </a>
+    <a href="">
+      <img src="icons/telegram.svg" alt="">
+    </a>
+  </div>  
   </footer>
   <script type="module" src="main.js"></script>
 </body>
