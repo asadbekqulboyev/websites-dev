@@ -62,4 +62,4 @@ setTimeout(() => {
   if (loadElement) {
     loadElement.style.display = 'none';
   }
-}, 900);
+}, 3000);
