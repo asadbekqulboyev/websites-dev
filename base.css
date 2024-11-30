@@ -15,10 +15,7 @@
   text-wrap: balance;
   color: inherit;
   box-sizing: border-box;
-  scrollbar-width: thin;
-  scrollbar-color: #676767 #424242;
   transition: all 0.15s ease-out;
-  -webkit-tap-highlight-color: rgba(0,0,0,0);
 }
 
 :focus-visible {
@@ -39,6 +36,14 @@ body {
   scroll-behavior: smooth;
   font-family: 'Montserrat';
 }
+body::-webkit-scrollbar{
+  width: 9px;
+  background-color: #737373;
+}
+body::-webkit-scrollbar-thumb{
+  border-radius: 89px;
+  background: #F15A24;
+}
 
 .container {
   width: 100%;
@@ -56,7 +61,7 @@ body {
   height: 6px;
   border-radius: 90px;
   background: #DEEEFF;
-  display: block; /* ::after elementini ko‘rsatish uchun */
+  display: block; 
 }
 .custom-after.rose::after {
   background-color: #FFBDA7;
@@ -67,4 +72,30 @@ body {
     margin-top: 5px;
     height: 4px;
   }
+}
+ .load::-webkit-scrollbar  {
+  display: none;
+  scrollbar-color: #fff;
+ }
+
+
+.loader {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  background: #222; 
+  border-radius: 50%; 
+}
+
+@keyframes l18 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.overflow-y-scroll::-webkit-scrollbar {
+  display: none !important;
 }

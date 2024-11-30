@@ -1,30 +1,65 @@
 import "./base.css";
+import Swiper from 'swiper';
+import { Navigation, } from "swiper/modules";
+import 'swiper/css';
 import tippy from "tippy.js";
 import "tippy.js/dist/tippy.css";
 tippy("[data-tippy-content]");
-
-// Light Mode Tugmasi
+const swiper = new Swiper('.swiper-container',{
+  modules: [Navigation],
+  navigation: {
+    nextEl: '.next_btn',
+    prevEl: '.prev_btn',
+  },
+})
 const lightModeButton = document.getElementById('lightMode');
-// Dark Mode Tugmasi
 const darkModeButton = document.getElementById('darkMode');
-// Root element (HTML)
 const rootElement = document.documentElement;
-
-// Light Mode-ni yoqish
 lightModeButton.addEventListener('click', () => {
-  rootElement.classList.remove('dark'); // Dark Mode ni o'chirish
-  localStorage.setItem('theme', 'light'); // Yangi tema holatini saqlash
+  rootElement.classList.remove('dark');   
+  localStorage.setItem('theme', 'light'); 
 });
 
-// Dark Mode-ni yoqish
 darkModeButton.addEventListener('click', () => {
-  rootElement.classList.add('dark'); // Dark Mode ni yoqish
-  localStorage.setItem('theme', 'dark'); // Yangi tema holatini saqlash
+  rootElement.classList.add('dark');
+  localStorage.setItem('theme', 'dark');
 });
-
-// Brauzer qayta yuklanganda saqlangan temani qo'llash
 if (localStorage.getItem('theme') === 'dark') {
-  rootElement.classList.add('dark'); // Agar oldingi holat dark bo'lsa, qayta yoqiladi
+  rootElement.classList.add('dark');
 } else {
-  rootElement.classList.remove('dark'); // Aks holda light holati saqlanadi
+  rootElement.classList.remove('dark');
 }
+
+
+window.onload = function () {
+  const scrollContainer = document.querySelector('.load');
+  const progressCircle = document.querySelector('.progress-circle');
+const radius = 40;
+const circumference = 2 * Math.PI * radius;
+
+progressCircle.style.strokeDasharray = circumference;
+const maxScroll = scrollContainer.scrollHeight - scrollContainer.clientHeight;
+const updateProgress = () => {
+  const scrollTop = scrollContainer.scrollTop;
+  const scrollProgress = scrollTop / maxScroll;
+  const offset = circumference - scrollProgress * circumference;
+  progressCircle.style.strokeDashoffset = offset;
+  scrollContainer.scrollTo({
+    top: maxScroll,
+    behavior: 'smooth', 
+  });
+  if (scrollTop >= maxScroll) {
+    clearInterval(interval); 
+  }
+
+};
+
+const interval = setInterval(updateProgress,100);
+
+};
+setTimeout(() => {
+  const loadElement = document.querySelector('.loads');
+  if (loadElement) {
+    loadElement.style.display = 'none';
+  }
+}, 900);

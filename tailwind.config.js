@@ -8,7 +8,7 @@ export default {
     extend: {
     },
   },
-  plugins: [],
+ 
 }
 module.exports = {
   darkMode: 'class',
@@ -24,5 +24,5 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+
 };

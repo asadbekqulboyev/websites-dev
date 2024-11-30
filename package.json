@@ -19,6 +19,7 @@
     "aos": "^2.3.4",
     "simplebar": "^6.2.7",
     "swiper": "^11.1.14",
+    "tailwind-scrollbar-hide": "^1.1.7",
     "tippy.js": "^6.3.7"
   }
 }
