@@ -10,7 +10,7 @@
    <div class="flex gap-[20px] justify-between container">
     <a class="[@media(hover:hover)]:hover:drop-shadow-xl active:scale-[0.9]" href="index.html">
      <img class="max-md:w-[200px] block dark:hidden max-xs:w-[130px] sm:w-auto" src="imgs/logo/logo-black.png" alt="web-sites.dev">
-     <img class="max-md:w-[200px] hidden dark:block max-xs:w-[130px] sm:w-auto" src="imgs/logo/logo-white.png" alt="web-sites.dev">
+     <img class="max-md:w-[200px] hidden dark:block  max-xs:w-[130px] sm:w-auto" src="imgs/logo/logo-white.png" alt="web-sites.dev">
     </a>
     <div class="flex gap-[40px]">
      <div class="flex items-center px-[40px] max-md:px-[10px] dark:border-[#fff] dark:border-x-[1px] border-x border-black/10">
@@ -22,7 +22,9 @@
       <menu class="flex items-center">
        <li>
         <button class="white-mode-button cursor-pointer  w-[35px] h-[30px] flex items-center justify-center border border-solid border-[#C7DAED]  rounded-[90px_0px_0px_90px] bg-[#F15A24] dark:bg-[#252525]" type="button" aria-expanded="false" data-tippy-content="Светлая тема" id="lightMode">
-          <img src="icons/white-mode-on.svg" alt="">
+          <img src="icons/white-mode-on.svg" alt="" class="block dark:hidden">          
+          <img src="icons/white-mode-off.svg" alt="" class="hidden dark:block">
+
         </button>
        </li>
        <li>
@@ -123,7 +125,7 @@
            bg-[#fff] pb-[25px] pl-[25px] pt-[28px] dark:bg-[#111] w-[100%] text-black font-montserrat text-[17px] font-normal leading-none max-md:w-[49%] max-md:pr-3 max-mobile:w-[100%] max-mobile:pb-[20px] max-mobile:pt-[20px] " name="name">
           <input type="text" placeholder="Номер телефона" class="rounded dark:text-white
            bg-[#fff] pb-[25px] pl-[25px] pt-[28px] dark:bg-[#111] w-[100%] text-black font-montserrat text-[17px] font-normal leading-none max-md:w-[49%] max-md:pr-3 max-mobile:w-[100%] max-mobile:pb-[20px] max-mobile:pt-[20px] " name="phone">
-          <button class=" text-center font-gilroy text-[17px] font-semibold leading-none px-6 py-2 max-md:py-6 max-mobile:py-[20px] max-mobile:px-[20px] bg-[#F15A24] text-white rounded hover:bg-orange-600 md:col-span-2 max-md:w-[100%]">
+          <button class=" text-center font-gilroy text-[17px] font-semibold leading-none px-6 py-2 max-md:py-6 max-mobile:py-[20px] max-mobile:px-[20px] bg-[#F15A24] text-white rounded hover:bg-orange-600 md:col-span-2 w-[100%] max-md:w-[100%]">
             Заказать консультацию
           </button>
         </form>
