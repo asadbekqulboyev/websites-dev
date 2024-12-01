@@ -101,3 +101,29 @@ body::-webkit-scrollbar-thumb{
 .overflow-y-scroll::-webkit-scrollbar {
   display: none !important;
 }
+
+
+/* .menu-active {
+  transform: rotate(45deg);
+  transition: all .2s linear;
+} */
+.hamburger.active {
+  position: relative;
+}
+.hamburger.active span{
+  position: absolute;
+  inset: 0;
+  margin: auto auto;
+}
+.hamburger.active span:nth-child(2){
+  display: none;
+}
+.hamburger.active span:nth-child(1){
+ transform:rotate(45deg) ;
+}
+.hamburger.active span:nth-child(3){
+  transform:rotate(-45deg) ;
+ }
+ .mobile_link.active{
+  left: 0;
+}

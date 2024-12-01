@@ -63,3 +63,10 @@ setTimeout(() => {
     loadElement.style.display = 'none';
   }
 }, 3000);
+
+let hamburger = document.querySelector('.hamburger'),
+mobile_link=document.querySelector('.mobile_link')
+hamburger.addEventListener('click', ()=>{
+  hamburger.classList.toggle('active')
+  mobile_link.classList.toggle('active')
+})

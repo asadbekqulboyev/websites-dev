@@ -68,14 +68,23 @@
   
   <div class="overflow-hidden">
     <header class="w-full min-h-[60px] max-md:min-h-[40px] p-[15px] bg-[#F6FBFF] dark:bg-[#252525] fixed z-50">
-      <div class="flex gap-[20px] justify-between container">
+      <div class="flex gap-[20px] justify-between container items-center">
         <a class="[@media(hover:hover)]:hover:drop-shadow-xl active:scale-[0.9]" href="index.html">
           <img class="max-md:w-[200px] block dark:hidden max-xs:w-[130px] sm:w-auto" src="imgs/logo/logo-black.png"
             alt="web-sites.dev">
           <img class="max-md:w-[200px] hidden dark:block  max-xs:w-[130px] sm:w-auto" src="imgs/logo/logo-white.png"
             alt="web-sites.dev">
         </a>
-        <div class="flex gap-[40px]">
+        <div class="flex max-md:left-[-100%]  max-md:top-[90px] bg-[#F6FBFF] dark:bg-[#252525] max-md:fixed max-md:w-full max-md:h-[100vh] max-xs:top-[50px] max-sm:top-[75px] mobile_link max-mobile:top-[65px]">
+          <div class="container">
+            <ul class="flex  max-md:flex-col items-center max-md:items-start gap-x-11">
+              <li class="max-md:border-t w-full"><a href="" class="py-[15px] px-[10px] flex dark:text-white">Home</a></li>
+              <li class="max-md:border-t w-full"><a href="" class="py-[15px] px-[10px] flex dark:text-white">About</a></li>
+              <li class="max-md:border-t w-full"><a href="" class="py-[15px] px-[10px] flex dark:text-white">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="flex gap-[40px] max-mobile:gap-[25px]">
           <div
             class="flex items-center px-[40px] max-md:px-[10px] dark:border-[#fff] dark:border-x-[1px] border-x border-black/10">
             <a class="[@media(hover:hover)]:hover:brightness-[0.8] active:scale-[0.9]" href="#!"
@@ -104,8 +113,15 @@
               </li>
             </menu>
           </div>
+          <div class=" w-[35px]  flex-col gap-y-[5px] justify-center items-end hamburger hidden max-md:flex cursor-pointer">
+            <span class="w-[100%] h-[3px] bg-black dark:bg-white "></span>
+            <span class="w-[50%] h-[3px] bg-black dark:bg-white "></span>
+            <span class="w-[100%] h-[3px] bg-black dark:bg-white "></span>
+          </div>
         </div>
+        
       </div>
+      
     </header>
     <main class=" mx-auto">
       <section
