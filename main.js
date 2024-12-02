@@ -14,6 +14,8 @@ const swiper = new Swiper('.swiper-container',{
 })
 const lightModeButton = document.getElementById('lightMode');
 const darkModeButton = document.getElementById('darkMode');
+const lightModeButton1 = document.getElementById('lightMode1');
+const darkModeButton1 = document.getElementById('darkMode1');
 const rootElement = document.documentElement;
 lightModeButton.addEventListener('click', () => {
   rootElement.classList.remove('dark');   
@@ -21,6 +23,15 @@ lightModeButton.addEventListener('click', () => {
 });
 
 darkModeButton.addEventListener('click', () => {
+  rootElement.classList.add('dark');
+  localStorage.setItem('theme', 'dark');
+});
+lightModeButton1.addEventListener('click', () => {
+  rootElement.classList.remove('dark');   
+  localStorage.setItem('theme', 'light'); 
+});
+
+darkModeButton1.addEventListener('click', () => {
   rootElement.classList.add('dark');
   localStorage.setItem('theme', 'dark');
 });
