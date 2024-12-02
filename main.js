@@ -61,6 +61,7 @@ setTimeout(() => {
   const loadElement = document.querySelector('.loads');
   if (loadElement) {
     loadElement.style.display = 'none';
+    document.body.classList.remove('actives')
   }
 }, 3000);
 

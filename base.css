@@ -44,7 +44,9 @@ body::-webkit-scrollbar-thumb{
   border-radius: 89px;
   background: #F15A24;
 }
-
+.actives{
+  overflow-y: hidden;
+}
 .container {
   width: 100%;
   margin: 0 auto;
@@ -109,6 +111,7 @@ body::-webkit-scrollbar-thumb{
 } */
 .hamburger.active {
   position: relative;
+  z-index: 7;
 }
 .hamburger.active span{
   position: absolute;
